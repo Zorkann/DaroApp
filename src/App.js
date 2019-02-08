@@ -11,6 +11,7 @@ import DontKnow from "./components/dontKnow/dontKnow.jsx";
 import GuestList from "./components/guestList/guestList.jsx";
 import SmallHall from "./components/halls/small-hall/smallHall.jsx";
 import BigHall from "./components/halls/big-hall/bigHall.jsx";
+import GuestForm from "./components/addGuestForm/form.jsx";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/small-hall" component={SmallHall} />
             <Route path="/big-hall" component={BigHall} />
             <Route path="/dont-know" component={DontKnow} />
+            <Route path="/add-new-guest" component={GuestForm} />
             <Redirect from="/" to="guest-list" />
           </Switch>
         </div>

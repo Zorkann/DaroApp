@@ -1,13 +1,9 @@
 import React, { Component } from "react";
-import { Button } from "antd";
+import GuestForm from "../addGuestForm/form";
 
 class DontKnow extends Component {
   render() {
-    return (
-      <div>
-        <Button size={"large"}>Dodaj nowego gościa</Button>
-      </div>
-    );
+    return <GuestForm />;
   }
 }
 
