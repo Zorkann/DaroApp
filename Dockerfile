@@ -6,10 +6,10 @@ WORKDIR frontend
 
 COPY app/package.json .
 
-RUN npm install
+RUN yarn
 
 COPY app .
 
-CMD [ "npm", "start" ]
+CMD [ "yarn", "start" ]
 
 EXPOSE 3000

@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Form, Row, Button } from "antd";
-import NameInput from "../addGuestForm/inputs/nameInput";
-import SurnameInput from "../addGuestForm/inputs/surnameInput";
-import HallNumberInput from "../addGuestForm/inputs/hallNumberInput";
-import TableNumberInput from "../addGuestForm/inputs/tableNumberInput";
-import CostInput from "../addGuestForm/inputs/costInput";
-import CouplesInput from "../addGuestForm/inputs/couplesInput";
+import NameInput from "./inputs/nameInput";
+import SurnameInput from "./inputs/surnameInput";
+import HallNumberInput from "./inputs/hallNumberInput";
+import TableNumberInput from "./inputs/tableNumberInput";
+import CostInput from "./inputs/costInput";
+import CouplesInput from "./inputs/couplesInput";
 import styles from "./form.module.css";
 
 class GuestForm extends Component {
