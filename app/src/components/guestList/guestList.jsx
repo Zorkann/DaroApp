@@ -3,10 +3,16 @@ import Table from "./table";
 import NewGuestButton from "./newGuestButton";
 
 class GuestList extends Component {
+  state = {
+    users: []
+  }
+
   componentDidMount() {
-    fetch('http://192.168.1.115:5000/api/v1/todosGet')
+    fetch('http://127.0.0.1:8082/users')
       .then(response => response.json())
-      .then(data => console.log(data.todos))
+      .then(users => this.setState({
+        users: users.data
+      }))
       .catch(error => console.log(error))
   }
 
@@ -18,7 +24,7 @@ class GuestList extends Component {
   render() {
     return (
       <React.Fragment>
-        <Table />
+        <Table users={this.state.users} />
         <NewGuestButton redirectToAddNewGuest={this.redirectToAddNewGuest} />
       </React.Fragment>
     );

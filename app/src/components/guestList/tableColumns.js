@@ -1,23 +1,23 @@
 export const columns = [
   {
     title: "Imię",
-    dataIndex: "name",
-    key: "name"
+    dataIndex: "title",
+    key: "title"
   },
   {
     title: "Nazwisko",
-    dataIndex: "surname",
-    key: "surname"
+    dataIndex: "text",
+    key: "text"
   },
   {
     title: "Sala",
-    dataIndex: "hall",
-    key: "hall"
+    dataIndex: "textY",
+    key: "textY"
   },
   {
     title: "Numer stolika",
-    dataIndex: "tableNumber",
-    key: "tableNumber"
+    dataIndex: "textX",
+    key: "textX"
   },
   {
     title: "Zapłacono",
