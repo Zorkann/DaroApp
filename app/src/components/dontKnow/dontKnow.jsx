@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import GuestForm from "../addGuestForm/form";
 
-class DontKnow extends Component {
-  render() {
-    return <GuestForm />;
-  }
-}
+const DontKnow = () => (
+  <GuestForm />
+)
 
 export default DontKnow;

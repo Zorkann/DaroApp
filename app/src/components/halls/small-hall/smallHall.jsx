@@ -1,13 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-class SmallHall extends Component {
-  render() {
-    return (
-      <div>
-        <h2> Small Hall </h2>
-      </div>
-    );
-  }
-}
+const SmallHall = () => (
+  <div>
+    <h2> Small Hall </h2>
+  </div>
+)
 
 export default SmallHall;
