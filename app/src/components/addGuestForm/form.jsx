@@ -23,7 +23,23 @@ const GuestForm = ({ form }) => {
   const handleSubmit = e => {
     e.preventDefault();
     form.validateFields((err, values) => {
+      const { name, surname, hallNumber, tableNumber, cost } = values
       if (!err) {
+        const newUser = {
+          name,
+          surname,
+          hallNumber,
+          tableNumber,
+          cost,
+          // couples
+        }
+        fetch('http://127.0.0.1:8082/addUser', {
+          method: 'post',
+          body: JSON.stringify({ newUser }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        })
         console.log("Received values of form: ", values);
       }
     });

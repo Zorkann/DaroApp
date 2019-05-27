@@ -10,7 +10,7 @@ const GuestList = ({ history }) => {
       .then(response => response.json())
       .then(users => setUsers(users.data))
       .catch(error => console.log(error))
-  })
+  }, [])
 
   const redirectToAddNewGuest = () => {
     const { push } = history;

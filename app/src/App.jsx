@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Header from "./components/header/header.jsx";
 import {
@@ -16,7 +16,6 @@ import GuestForm from "./components/addGuestForm/form.jsx";
 
 const App = () => (
   <Router>
-    <div>
       <Header />
       <Switch>
         <Route path="/guest-list" component={GuestList} />
@@ -26,7 +25,6 @@ const App = () => (
         <Route path="/add-new-guest" component={GuestForm} />
         <Redirect from="/" to="guest-list" />
       </Switch>
-    </div>
   </Router>
 )
 
